@@ -8517,7 +8517,7 @@ Verwende Markdown für Formatierung innerhalb der Strings.`;
       's14-panel-verschaerft' : 'modul14_verschaerft',
       's14-panel-entspannt'   : 'modul14_entspannt'
     };
-    Object.entries(szMap    Object.entries(szMap).forEach(([panelId, key]) => {
+    Object.entries(szMap).forEach(
       const el  = document.getElementById(panelId);
       const val = parsed[key];
       if (el && val) {
