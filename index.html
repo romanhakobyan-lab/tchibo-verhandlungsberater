@@ -9218,11 +9218,11 @@ auf einer Skala von 0–10. Sei präzise und konstruktiv.
 
 VERHANDLUNGSVERLAUF:
 ${STATE.simHistory.map(m =>
-  `${m.role === 'einkauf' ? 'EINKÄUFER' : ´  `${m.role === 'einkauf' ? 'EINKÄUFER' : 'LIEFERANT'}: ${m.text
+`${m.role === 'einkauf' ? 'EINKÄUFER' : 'LIEFERANT'}: ${m.text
     .replace(/\*\*(.*?)\*\*/g, '$1')
     .replace(/\n/g, ' ')
     .slice(0, 200)}`
-).join('\n')}
+).join('\n')} 
 
 KONTEXT:
 Warengruppe   : ${STATE.formData.warengruppe || '—'}
